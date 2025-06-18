@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- ----------hero Section Start---------- -->
+    <div class="hero" id="home">
+      <nav>l
+        <h2 class="logo">Portfo<span>lio</span></h2>
+        <ul>  
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me </a></li>L
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <a href="Muhammad Ali.pdf" class="btn" download>Download CV</a>
+      </nav>
+
+      <div class="hero-content-wrapper">
+        <img src="images/bariac.jpg" alt="Muhammad Ali" class="hero-main-img" />
+        <div class="content">
+          <h4>Hello, my name is</h4>
+          <h1>Muhammad <span>Ali</span></h1>
+          <h3>I'am a Web Developer.</h3>
+        </div>
+      </div>
+    </div>
+    <!-- ----------About Section Start---------- -->
+    <section class="about" id="about">
+      <div class="main">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Software Engineer with practical experience in developing scalable, performant web applications using JavaScript, React.js, and Node.js. Strong foundation in data structures and algorithms, enabling efficient code and system design. Specialized in query optimization and backend performance tuning, with measurable improvements including a 110% increase in server-side page performance. Proficient in building responsive UIs and RESTful APIs, with a focus on modular, maintainable codebases. Experienced in translating complex client requirements into technical specifications and production-ready features. Actively engaged in continuous learning and keeping up with emerging technologies.
+          </p>
+          <button type="button">Let's Talk</button>
+        </div>
+        <div class="about-image">
+          <img src="images/react.webp" alt="React Logo" class="react-logo">
+        </div>
+      </div>
+    </section>
+
+    <!-----------Skills section start----------->
+    <section class="skills" id="skills">
+        <div class="title">
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-content">
+            <div class="skill-item">
+                <h3>Programming Languages:</h3>
+                <p>Java, C++, C, JavaScript, Typescript, Python</p>
+            </div>
+            <div class="skill-item">
+                <h3>Frontend Development:</h3>
+                <p>HTML, CSS, React.js, Tailwind CSS, Bootstrap</p>
+            </div>
+            <div class="skill-item">
+                <h3>Machine Learning & Deep Learning:</h3>
+                <p>PyTorch, Numpy, Pandas</p>
+            </div>
+            <div class="skill-item">
+                <h3>Databases:</h3>
+                <p>MS SQL Server</p>
+            </div>
+            <div class="skill-item">
+                <h3>Backend Development:</h3>
+                <p>Node.js, Express.js</p>
+            </div>
+        </div>
+    </section>
+
+    <!-----------Projects section start----------->
+    <section class="projects" id="projects">
+        <div class="title">
+            <h2>My Projects</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <h5>Zomato Food App</h5>
+                <div class="project-img-wrapper">
+                    <img src="images/zomato.jpeg" alt="Zomato Food App" class="project-img">
+                </div>
+                <div class="pra">
+                    <p><strong>Tech Stack:</strong> React Native, Expo Router, Native Wind, Supabase</p>
+                    <ul>
+                        <li>Built a fully responsive and scalable food delivery application for Android and iOS using React Native with modern navigation and UI frameworks.</li>
+                    </ul>
+                    <div class="more-description" id="zomato-more-desc">
+                        <ul>
+                            <li>Integrated Supabase for real-time database updates, user authentication, and secure backend services.</li>
+                            <li>Focused on intuitive UX design, efficient state management, and smooth performance to enhance user interaction across platforms.</li>
+                        </ul>
+                    </div>
+                    <p style="text-align: center">
+                        <button class="show-more-btn" data-target="zomato-more-desc">Show More</button>
+                        <button class="show-less-btn" data-target="zomato-more-desc" style="display: none;">Show Less</button>
+                        <a class="button" href="https://github.com/aliqazii/Zomato-Food-App">GitHub Link</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5>SMPL-X Body Generator: Parametric Human Body Mesh Generator Using SMPL-X</h5>
+                <div class="project-img-wrapper">
+                    <img src="images/model.jpeg" alt="SMPL-X Body Generator" class="project-img">
+                </div>
+                <div class="pra">
+                    <p><strong>Tech Stack:</strong> Python, PyTorch, SMPL-X, Trimesh</p>
+                    <ul>
+                        <li>Built a 3D human body generation pipeline leveraging the SMPL-X parametric model to synthesize realistic body meshes with control over shape, expression, and pose parameters.</li>
+                    </ul>
+                    <div class="more-description" id="smplx-more-desc">
+                        <ul>
+                            <li>Integrated PyTorch to manipulate shape (betas), expression, and pose vectors and compute corresponding 3D mesh vertices and joints.</li>
+                            <li>Utilized the trimesh library to export and visualize generated body models as .obj files, facilitating quick inspection and downstream use.</li>
+                            <li>Focused on learning advanced 3D body modeling techniques, parameter-driven mesh synthesis, and efficient mesh file handling in Python.</li>
+                        </ul>
+                    </div>
+                    <p style="text-align: center">
+                        <button class="show-more-btn" data-target="smplx-more-desc">Show More</button>
+                        <button class="show-less-btn" data-target="smplx-more-desc" style="display: none;">Show Less</button>
+                        <a class="button" href="https://github.com/aliqazii/FYP-Model-Generation">GitHub Link</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5>Calculator</h5>
+                <div class="project-img-wrapper">
+                    <img src="images/calculator.png" alt="Calculator" class="project-img">
+                </div>
+                <div class="pra">
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                    <ul>
+                        <li>Designed and developed a fully functional web-based calculator using vanilla JavaScript, handling real-time arithmetic operations with an intuitive interface.</li>
+                    </ul>
+                    <div class="more-description" id="calculator-more-desc">
+                        <ul>
+                            <li>Implemented dynamic input parsing, error handling, and efficient state management through a custom Calculator class structure.</li>
+                            <li>Focused on clean UI design and responsive layout using CSS Grid, ensuring consistent user experience across devices.</li>
+                        </ul>
+                    </div>
+                    <p style="text-align: center">
+                        <button class="show-more-btn" data-target="calculator-more-desc">Show More</button>
+                        <button class="show-less-btn" data-target="calculator-more-desc" style="display: none;">Show Less</button>
+                        <a class="button" href="https://github.com/aliqazii/Calculator">GitHub Link</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                
+                <h5>Modern Analog Clock</h5>
+                <div class="project-img-wrapper">
+                    <img src="images/claock.jpeg" alt="Modern Analog Clock" class="project-img">
+                </div>
+                <div class="pra">
+                    <p>A sleek, responsive analog clock built with vanilla web technologies. Features real-time hand movements synchronized with the system clock.</p>
+                    <ul>
+                        <li>Built with HTML, CSS, and JavaScript</li>
+                    </ul>
+                    <div class="more-description" id="clock-more-desc">
+                        <ul>
+                            <li>Dark-themed circular interface with animated hands</li>
+                            <li>Precise time calculations and smooth animations</li>
+                            <li>Fully responsive design</li>
+                        </ul>
+                    </div>
+                    <p style="text-align: center;">
+                        <button class="button show-more-btn" data-target="clock-more-desc">Show More</button>
+                        <button class="button show-less-btn" data-target="clock-more-desc" style="display: none;">Show Less</button>
+                        <a class="button github-link-btn" href="https://github.com/aliqazii/Modern-Analog-Clock" target="_blank">GitHub Link</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5>E-Commerce Web App</h5>
+                <div class="project-img-wrapper">
+                    <img src="images/ecommerce.webp" alt="E-Commerce Web App" class="project-img">
+                </div>
+                <div class="pra">
+                    <p>A session-based e-commerce web application with product listing, user authentication, and cart functionality.</p>
+                    <ul>
+                        <li>Built with Node.js, Express, EJS, and Multer</li>
+                    </ul>
+                    <div class="more-description" id="ecommerce-more-desc">
+                        <ul>
+                            <li>Implemented JSON-based storage for users and product data</li>
+                            <li>Integrated Multer for secure image uploads</li>
+                            <li>Enabled session-based user authentication and cart state</li>
+                            <li>Developed admin features for product management</li>
+                            <li>Built with server-side rendering using EJS</li>
+                        </ul>
+                    </div>
+                    <p style="text-align: center;">
+                        <button class="button show-more-btn" data-target="ecommerce-more-desc">Show More</button>
+                        <button class="button show-less-btn" data-target="ecommerce-more-desc" style="display: none;">Show Less</button>
+                        <a class="button github-link-btn" href="https://github.com/aliqazii/Ecommerce-Page" target="_blank">GitHub Link</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5>Matrix Encryption as a Service</h5>
+                <div class="project-img-wrapper">
+                    <img src="images/matrix.jpeg" alt="Matrix Encryption Service" class="project-img">
+                </div>
+                <div class="pra">
+                    <p><strong>Tech Stack:</strong> Django, Python, SQLite/PostgreSQL</p>
+                    <ul>
+                        <li>Built a web-based system to monitor and manage user-specific API usage along with detailed performance metrics.</li>
+                    </ul>
+                    <div class="more-description" id="matrix-encryption-more-desc">
+                        <ul>
+                            <li>Extended Django's default user model to include company details, usage limits, and premium tier status.</li>
+                            <li>Implemented functionality to create and manage multiple API keys per user, along with a usage dashboard displaying operation type, algorithm used, CPU core consumption, and data processing time.</li>
+                            <li>Views include user registration, API key listing, and real-time service usage statistics, rendered with Django templates for a smooth user experience.</li>
+                            <li>Designed with modular, scalable components to support future integration with external processing services or analytics tools.</li>
+                        </ul>
+                    </div>
+                    <p style="text-align: center;">
+                        <button class="button show-more-btn" data-target="matrix-encryption-more-desc">Show More</button>
+                        <button class="button show-less-btn" data-target="matrix-encryption-more-desc" style="display: none;">Show Less</button>
+                        <a class="button github-link-btn" href="https://github.com/aliqazii/Matrix-Encryption-Service" target="_blank">GitHub Link</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------Education and Certifications section start----------->
+    <section class="edu-cert">
+        <div class="title">
+            <h2>Education & Certifications</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <h5>Education</h5>
+                <div class="pra">
+                    <p><strong>COMSATS University Islamabad, Lahore</strong></p>
+                    <p>Bachelor's degree in computer sciences</p>
+                    <p>2022-present</p>
+                </div>
+            </div>
+            <div class="card">
+                <h5>Certifications</h5>
+                <div class="pra">
+                    <p><strong>Machine Learning Specialization</strong> - Coursera, Stanford Online , Deeplearning.AI (verification: <a href="https://coursera.org/share/5b129cf29d5fd8330c31b51592045182">LINK</a>)</p>
+                    <p><strong>CCNA Certification</strong> by Cisco - (verification: <a href="https://www.credly.com/badges/ac380f53-37cb-40c4-88f3-031fc877a9a0/linked_in?t=shb43l">LINK</a>)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-----------Contact Me Start----------->
+ <div class="contact-me" id="contact">
+    <p>Looking for a skilled Web Developer? Let's connect.</p>
+    <a class="button-two" href="mailto:aliqazii0061@gmail.com?subject=Hiring Inquiry&body=Hello Muhammad Ali,%0D%0A%0D%0AI am interested in discussing potential opportunities with you.%0D%0A%0D%0ABest regards,">Hire Me</a>
+ </div>
+
+<!-----------Footer start----------->
+
+<footer>
+<p>Muhammad Ali</p>
+<p>Thank you for visiting my portfolio. Feel free to connect with me!</p>
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/ali-qazi-843844291/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/aliqazii" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="tel:03257202576"><i class="fas fa-phone"></i></a>
+        <a href="mailto:aliqazii0061@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="end">CopyRights By Muhammad Ali</p>
+</footer>
+
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const showMoreBtns = document.querySelectorAll('.show-more-btn');
+      const showLessBtns = document.querySelectorAll('.show-less-btn');
+
+      showMoreBtns.forEach(button => {
+        button.addEventListener('click', function() {
+          const targetId = this.dataset.target;
+          const moreDesc = document.getElementById(targetId);
+          if (moreDesc) {
+            moreDesc.style.display = 'block';
+            this.style.display = 'none';
+            this.nextElementSibling.style.display = 'inline-block'; // Show Less button
+          }
+        });
+      });
+
+      showLessBtns.forEach(button => {
+        button.addEventListener('click', function() {
+          const targetId = this.dataset.target;
+          const moreDesc = document.getElementById(targetId);
+          if (moreDesc) {
+            moreDesc.style.display = 'none';
+            this.style.display = 'none';
+            this.previousElementSibling.style.display = 'inline-block'; // Show More button
+          }
+        });
+      });
+    });
+  </script>
+</html>
